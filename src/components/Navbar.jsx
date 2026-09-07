@@ -19,8 +19,8 @@ export default function Navbar() {
         <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
           <span className={isActive('/')} onClick={() => nav('/')}>Home</span>
           <span className={isActive('/shop')} onClick={() => nav('/shop')}>Shop</span>
-          <span onClick={() => nav('/shop')}>Collections</span>
-          <span onClick={() => nav('/shop')}>About</span>
+          <span className={isActive('/collections')} onClick={() => nav('/collections')}>Collections</span>
+          <span className={isActive('/about')} onClick={() => nav('/about')}>About</span>
         </nav>
 
         <div className="nav-actions">
